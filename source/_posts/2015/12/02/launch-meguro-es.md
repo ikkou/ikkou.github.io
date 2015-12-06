@@ -5,22 +5,26 @@ tags: meguroes
 
 ![Meguro.ECMAScript.png](/img/Meguro.ECMAScript.png)
 
-## intro
-
 2015年12月08日に **Meguro.es #1 in Drecom** を開催します。
+
+<!-- more -->
+
+## toc
+
+<!-- toc -->
+
+## intro
 
 - 名称: Meguro.es #1 in Drecom
 - 日時: 2015/12/08(水) 19:30-21:00
 - 場所: 株式会社ドリコム カフェスペース
-- ハッシュタグ: #meguroes
+- ハッシュタグ: [#meguroes](https://twitter.com/hashtag/meguroes?src=hash)
 - 募集: [connpass](http://meguroes.connpass.com/event/21510/)
 - 参加費: 無料
 
 大変ありがたいことに、キャンセル待ちが発生する程度に参加の申し込みがありますが、会場キャパシティの都合上これ以上の増員が出来ないのが心苦しい限りです。
 
 2-3ヶ月スパンで定期開催を目論んでいるので、connpass の [Meguro.es グループ](http://meguroes.connpass.com/)のメンバーになっておくと捗るかもしれません。
-
-<!-- more -->
 
 ## Meguro.es とはなにか
 

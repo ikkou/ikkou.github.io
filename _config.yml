@@ -5,7 +5,7 @@
 # Site
 title: ikkou.jp
 subtitle:
-description: 
+description:
 author: ikkou
 language: en
 timezone: Japan
@@ -92,3 +92,6 @@ backup:
   theme: apollo
   repository:
     github: git@github.com:ikkou/ikkou.github.io.git,source
+
+toc:
+  maxDepth: 3
