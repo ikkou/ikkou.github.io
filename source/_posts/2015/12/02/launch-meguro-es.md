@@ -3,6 +3,8 @@ date: 2015-12-02 16:55:28
 tags: meguroes
 ---
 
+![alt](/img/Meguro.ECMAScript.png "title")
+
 ## intro
 
 2015年12月08日に **Meguro.es #1 in Drecom** を開催します。
@@ -16,7 +18,7 @@ tags: meguroes
 
 大変ありがたいことに、キャンセル待ちが発生する程度に参加の申し込みがありますが、会場キャパシティの都合上これ以上の増員が出来ないのが心苦しい限りです。
 
-2-3ヶ月スパンで定期開催を目論んでいるので、connpass の [Meguro.es グループ](http://meguroes.connpass.com/)のメンバーになっておくと捗るかもしれません。	
+2-3ヶ月スパンで定期開催を目論んでいるので、connpass の [Meguro.es グループ](http://meguroes.connpass.com/)のメンバーになっておくと捗るかもしれません。
 
 <!-- more -->
 
@@ -38,7 +40,7 @@ Meguro.es は、地域ほげほげコミュニティのひとつであり「目�
 
 ### なぜ js ではなく es なのか
 
-`es` は言わずもがな `ECMAScript` の `es` です。	
+`es` は言わずもがな `ECMAScript` の `es` です。
 
 2015年6月、ついに、ようやく ECMAScript 2015 (ECMAScript 6) が正式に承認されました。
 
