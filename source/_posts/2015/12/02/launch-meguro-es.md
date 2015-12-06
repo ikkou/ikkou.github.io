@@ -3,7 +3,7 @@ date: 2015-12-02 16:55:28
 tags: meguroes
 ---
 
-![alt](/img/Meguro.ECMAScript.png "title")
+![Meguro.ECMAScript.png](/img/Meguro.ECMAScript.png)
 
 ## intro
 
