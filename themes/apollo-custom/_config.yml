@@ -1,0 +1,16 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+rss: /atom.xml
+
+# Content
+excerpt_link: (more…)
+fancybox: true
+
+# Miscellaneous
+google_analytics: UA-70909383-1
+favicon: /favicon.png
+
+# Social
+twitter: ikkou
