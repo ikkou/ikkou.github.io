@@ -10,9 +10,9 @@ date: 2015-12-07 01:06:08
 
 ## Social accounts
 
-- <i class="fa fa-github fa-fw"></i> <a href="http://github.com/ikkou">GitHub</a>
-- <i class="fa fa-facebook fa-fw"></i> <a href="https://www.facebook.com/morohoshi.ikkou">Facebook</a>
-- <i class="fa fa-twitter fa-fw"></i> <a href="https://twitter.com/ikkou">Twitter</a>
+- <i class="fa fa-github"></i> <a href="http://github.com/ikkou">https://github.com/ikkou</a>
+- <i class="fa fa-facebook"></i> <a href="https://www.facebook.com/morohoshi.ikkou">https://www.facebook.com/morohoshi.ikkou</a>
+- <i class="fa fa-twitter"></i> <a href="https://twitter.com/ikkou">https://twitter.com/ikkou</a>
 
 ## Communities
 
