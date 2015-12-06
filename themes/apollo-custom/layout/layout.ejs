@@ -1,12 +1,17 @@
 <%- partial('_partial/head') %>
 <body>
-  <div id="container">
-    <%- partial('_partial/header') %>
-    <div id="main">
-      <%- body %>
-    </div>
-    <%- partial('_partial/footer') %>
-    <%- partial('_partial/after-footer') %>
+<div id="container">
+  <%- partial('_partial/header') %>
+  <div id="main">
+    <%- body %>
   </div>
+  <%- partial('_partial/footer') %>
+  <%- partial('_partial/after-footer') %>
+</div>
+<script type="text/javascript">
+if (location.port != '4000' && location.protocol != 'https:') {
+  location.replace(location.href.replace(/http:/, 'https:'));
+}
+</script>
 </body>
 </html>
