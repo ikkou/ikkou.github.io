@@ -1,8 +1,5 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="post">
 	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-		</span>
 		<div class="commentscount">
 			<% if (post.comments && config.disqus_shortname){ %>
 				<a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
@@ -23,13 +20,6 @@
       <% } %>
     <% } else { %>
     	<%- post.content %>
-
-		<ul class="share-on">
-			<li><a class="share-on-link share-on-twitter" href="https://twitter.com/intent/tweet?text=<%= post.title %>&url=<%= page.permalink %>&via=<%= theme.twitter %>" target="_blank">Twitter</a></li>
-			<li><a class="share-on-link share-on-facebook" href="https://www.facebook.com/sharer/sharer.php?u=<%= page.permalink %>" target="_blank">Facebook</a></li>
-			<li><a class="share-on-link share-on-hatena" href="http://b.hatena.ne.jp/entry/<%= page.permalink %>" target="_blank">はてブ</a></li>
-		</ul>
-
     <% } %>
 	</div>
 	<footer class="entry-footer">
