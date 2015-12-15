@@ -5,7 +5,7 @@ tags: [AdventCalendar, 神社仏閣, 御朱印]
 
 [@ikkou](http://twitter.com/ikkou) です。
 
-これは「[寺・神社 Advent Calendar 2015](http://www.adventar.org/calendars/967)」の11日目です。実質3日目。
+これは「[寺・神社 Advent Calendar 2015](http://www.adventar.org/calendars/967)」の11日目の記事です。実質3日目。
 本当は昨日、12月10日に書く宣言をしていましたが、何も準備が出来ないまま、あれよあれよと当日を迎えてしまい、12月を迎えてもなお空いていた翌日に変更した次第。
 
 というわけでアドベントカレンダー11日目の今日は「徳川家康公奉斎四百年記念御朱印ラリー」に行った時のことを写真多めで書き連ねます。

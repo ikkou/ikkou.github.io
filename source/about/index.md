@@ -1,6 +1,8 @@
-title: I'm ikkou
+title: Hi, I'm ikkou
 date: 2015-12-07 01:06:08
 ---
+
+![](/img/ikkou.png)
 
 ## About
 
