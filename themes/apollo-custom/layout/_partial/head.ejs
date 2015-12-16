@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <meta charset="utf-8">
 <%
 var title = page.title;
@@ -22,11 +22,12 @@ if (is_archive()){
 <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
 <meta name="viewport" content="width=device-width">
 <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+<meta property="og:image" content="https://ikkou.jp/img/ogp.png">
 <% if (theme.rss){ %>
 <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
 <% } %>
 <% if (theme.favicon){ %>
-<link rel="icon" href="<%- theme.favicon %>">
+<link rel="shortcut icon" href="<%- theme.favicon %>">
 <% } %>
 <%- css('css/style') %>
 <%- partial('google-analytics') %>

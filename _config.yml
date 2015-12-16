@@ -5,7 +5,7 @@
 # Site
 title: ikkou.jp
 subtitle:
-description:
+description: ikkou - 株式会社ドリコムでフロントエンドエンジニア的な何かやカメラマン的な何かをしています。嫁ちゃんが好き。
 author: ikkou
 language: en
 timezone: Japan
@@ -85,13 +85,7 @@ feed:
 sitemap:
   path: sitemap.xml
 
-# backup
-## https://github.com/coneycode/hexo-git-backup
-backup:
-  type: git
-  theme: apollo
-  repository:
-    github: git@github.com:ikkou/ikkou.github.io.git,source
-
+# toc
+## https://github.com/bubkoo/hexo-toc
 toc:
   maxDepth: 3
