@@ -250,11 +250,3 @@ ChatWork をより便利にするには、ブックマークレットではな�
 
 [【その1】ドリコム Advent Calendar 2015](http://www.adventar.org/calendars/1043) の 18 日目は Y さんです。
 [【その2】ドリコム Advent Calendar 2015](http://www.adventar.org/calendars/1044) の 18 日目は m-szk さんです。
-
----
-
-## 参考
-
-- [意外と知らないChrome Developer Toolsの便利な機能 - Qiita](http://qiita.com/grapswiz/items/1e48815f8b6c921c2f1c)
-- [Ruby - 新人エンジニアが業務効率化のためにブックマークレット作ってみたよ - Qiita](http://qiita.com/yoppe/items/f074508cec65f3ae91f1)
-- [bookmarklet - ブックマークレットを作るときのTips - Qiita](http://qiita.com/xtetsuji/items/e8b61bb39c41b7a9345e)
