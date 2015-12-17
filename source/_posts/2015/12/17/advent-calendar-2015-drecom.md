@@ -1,5 +1,5 @@
 title: 'ChatWork をちょっと便利にするブックマークレット'
-description: 'これは【その1】ドリコム Advent Calendar 2015 の 17日目の記事です。ChatWorkをちょっと便利にするブックマークレットを紹介しています。'
+description: 'これは【その1】ドリコム Advent Calendar 2015 の 17日目の記事です。ChatWorkをちょっと便利にするブックマークレットを紹介します。'
 date: 2015-12-17 00:00:00
 tags: [Drecom, AdventCalendar, Bookmarklet]
 ---
@@ -8,12 +8,14 @@ tags: [Drecom, AdventCalendar, Bookmarklet]
 
 これは [【その1】ドリコム Advent Calendar 2015](http://www.adventar.org/calendars/1043) の 17 日目の記事です。
 16 日目は ozabi さんの [イラストメイキング](https://ozabeastrong.amebaownd.com/posts/374733) でした。
+上手なイラストを書ける人が羨ましい……。
 
 [【その2】ドリコム Advent Calendar 2015](http://www.adventar.org/calendars/1044) もあります。
 
 去年、2014年は [アドベントカレンダーでニコニコカレンダーの話を書きたかった](http://qiita.com/ikkou/items/46bb4ddf637742bfcd70) という記事を書いていました。
+ちなみにニコカレの取り組みは今ひとつ定着しなかった感があります。
 
-今年、2015 年は、自分の観測範囲の中でも特に動きの激しかった JavaScript 界隈を振り返ろうかなーと思いましたが、~~素振りすら追いつけていない程度に疲弊しているので~~ 同じ JavaScript という括りでも疲弊することのない、ブックマークレットのことを書きます。
+今年、2015 年は、自分の観測範囲の中でも特に動きの激しかった JavaScript 界隈を振り返ろうかなーと思いましたが、~~素振りすら追いつけていない程度に疲弊しているので~~ 同じ JavaScript という括りでも、全く疲弊することのない、ブックマークレットのことを書きます。
 
 <!-- more -->
 
@@ -27,9 +29,11 @@ tags: [Drecom, AdventCalendar, Bookmarklet]
 - ドリコムには 2015/09/01 に中途入社
   - ~~入社して最初に携わった漫画アプリは数ヶ月でクローズ判断(´・ω・｀)~~
   - Web フロントエンドを頑張るグループ所属
+  - MacBook Pro にステッカーをたくさん貼る勢
 - 普段何をしているの?
   - いわゆる管理職的な何か
   - フロントエンドエンジニア的な何か
+    - ドリコムのフロントエンドスタンダードを考えています
   - カメラマン的な何か
 
 ## toc
@@ -41,7 +45,7 @@ tags: [Drecom, AdventCalendar, Bookmarklet]
 去年のアドベントカレンダーにも書きましたが、弊社の標準コミュニケーションツールは ChatWork です。
 通常の ChatWork ではなく、管理機能が強化されている [KDDI ChatWork](http://www.chatwork.com/kddi/) です。
 
-ちょっと貧弱な検索に辟易しつつ、たまにやってくるサーバダウンにも負けず、流行りの Slack に流れることもなく使い続けているので、そろそろ「[導入事例](http://www.chatwork.com/ja/case/)」ページに掲載されても良いと思うのですが、いかがでしょうか？←
+ちょっと貧弱な検索機能に辟易しつつ、たまにやってくるサーバダウンにも負けず、だからといって流行りの Slack に流れることもなく使い続けているので、そろそろ「[導入事例](http://www.chatwork.com/ja/case/)」ページに掲載されても良いと思うのですが、いかがでしょうか？←
 
 そして ChatWork はもう少し API が解放されると良いのになーと日々願っています。
 
@@ -107,9 +111,9 @@ Enter を押すと画面が xxx になるので、ブラウザの更新ボタン
 
 ## ChatWork をちょっと便利にするブックマークレット
 
-ようやく本題です。
+ここから本題です。
 
-これから挙げるブックマークレットは、Chrome で動作を検証しています。
+これから挙げるブックマークレットは、Chrome で動作を確認しています。
 
 また、2015 年 12 月現在の ChatWork に対応していますが、ChatWork の DOM 構造が変わった場合には、使えなくなる可能性があります。
 その場合は `textarea` の `#_chatText` を適切なものに変更すれば動きます。多分。
@@ -238,9 +242,46 @@ javascript:(function(){var f=$('#_chatText');f.val(f.val().replace(/[\n\r]/g," "
 ちなみにこれは、「ChatWork ご意見・ご要望フォーラム」に挙がっている「[TO付→すべて選択で「改行なし」や「改行・名前なし」を選択したい](http://feedback-ja.chatwork.com/forums/269086-chatwork-%E3%81%94%E6%84%8F%E8%A6%8B-%E3%81%94%E8%A6%81%E6%9C%9B%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%83%A0/suggestions/7010277-to%E4%BB%98-%E3%81%99%E3%81%B9%E3%81%A6%E9%81%B8%E6%8A%9E%E3%81%A7-%E6%94%B9%E8%A1%8C%E3%81%AA%E3%81%97-%E3%82%84-%E6%94%B9%E8%A1%8C-%E5%90%8D%E5%89%8D%E3%81%AA%E3%81%97-%E3%82%92%E9%81%B8%E6%8A%9E%E3%81%97%E3%81%9F%E3%81%84)」を解決出来るブックマークレットです。
 他のブックマークレットに比べ、これはちょっとどころか結構便利にするのでは？と勝手に思っています。
 
+### ④ テキストエリアに入力した Dropbox の「共有リンク」をブラウザで直接表示出来る URL に変換するブックマークレット
+
+ChatWork のテキストエリアに入力されている文字列を書き換える、という意味でしか ChatWork は関係ない上、使い道がかなり限定的なので、あくまでおまけ的なブックマークレットです。
+
+静的なファイル、例えば HTML, CSS, JavaScript の表示、動作をサクッと確認する方法として、Dropbox を使う手があります。
+
+ブラウザあるいはクライアントアプリで、対象ファイルの「リンクを共有」をクリックすると `https://www.dropbox.com` で始まる URL がクリップボードにコピーされます。
+
+この URL にアクセスしても、そのファイルをブラウザで直接表示することは出来ず、ダウンロードか Dropbox への保存を促すページが表示されてしまいます。
+
+![](https://i.gyazo.com/1fd14807ac2fa52b28f44fba799de142.png)
+
+そんな時は ChatWork のテキストエリアに URL を貼り付けた後、このブックマークレットを使えば、直接表示出来る URL に変換されます。
+特にスマホ実機のブラウザで表示を確認したい、みたいな場合に捗ります。
+
+#### ブックマークレット
+
+```
+javascript:(function(){var f=$('#_chatText');f.val(f.val().replace(/www.dropbox/g,'dl.dropboxusercontent').replace(/\?dl=0/g,''));}())
+```
+
+#### before
+
+```
+https://www.dropbox.com/s/imnclb4foreewwb/dropbox.html?dl=0
+```
+
+この URL 形式では Dropbox の画面が表示されてしまい `sample.html` の実体を表示することは出来ません。
+
+#### after
+
+```
+https://dl.dropboxusercontent.com/s/imnclb4foreewwb/dropbox.html
+```
+
+この URL 形式であれば `sample.html` の実体を表示することが出来ます。
+
 ## まとめ
 
-ChatWork をちょっと便利にするブックマークレットを3つ紹介しました。
+ChatWork をちょっと便利にするブックマークレットを4つ紹介しました。
 
 ChatWork をより便利にするには、ブックマークレットではなく拡張機能の方が適しているかもしれませんが、リロードすれば元に戻ってしまう、そんなブックマークレットの儚い感じが好きです。
 
