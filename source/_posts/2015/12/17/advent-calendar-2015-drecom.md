@@ -2,6 +2,7 @@ title: 'ChatWork をちょっと便利にするブックマークレット'
 description: 'これは【その1】ドリコム Advent Calendar 2015 の 17日目の記事です。ChatWorkをちょっと便利にするブックマークレットを紹介します。'
 date: 2015-12-17 00:00:00
 tags: [Drecom, AdventCalendar, Bookmarklet]
+image: https://ikkou.jp/img/ogp.png
 ---
 
 ## intro
@@ -26,7 +27,7 @@ tags: [Drecom, AdventCalendar, Bookmarklet]
 - Rails の Sprockets を捨てたいフロントエンド勢
   - 出来れば `browserify-rails` を始めとする `xxx-rails` 系すら避けたい
   - 最近だと f 社のフロントエンド革命論が好き
-- ドリコムには 2015/09/01 に中途入社
+- ドリコムには 2014/09/01 に中途入社
   - ~~入社して最初に携わった漫画アプリは数ヶ月でクローズ判断(´・ω・｀)~~
   - Web フロントエンドを頑張るグループ所属
   - MacBook Pro にステッカーをたくさん貼る勢
@@ -290,4 +291,4 @@ ChatWork をより便利にするには、ブックマークレットではな�
 ---
 
 [【その1】ドリコム Advent Calendar 2015](http://www.adventar.org/calendars/1043) の 18 日目は Y さんです。
-[【その2】ドリコム Advent Calendar 2015](http://www.adventar.org/calendars/1044) の 18 日目は m-szk さんです。
+[【その2】ドリコム Advent Calendar 2015](http://www.adventar.org/calendars/1044) の 18 日目は wasbi01 さんです。
