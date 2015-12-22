@@ -89,3 +89,11 @@ sitemap:
 ## https://github.com/bubkoo/hexo-toc
 toc:
   maxDepth: 3
+
+# hexo-tag-emojis plugin configuration
+## https://github.com/sergiolepore/hexo-tag-emojis
+plugins:
+  - hexo-tag-emojis
+
+emojis:
+  image_dir: images/emojis
