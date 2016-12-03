@@ -1,5 +1,5 @@
 # Hexo Configuration
-## Docs: http://hexo.io/docs/configuration.html
+## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
@@ -61,12 +61,12 @@ per_page: 5
 pagination_dir: page
 
 # Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
 theme: apollo-custom
 
 # Deployment
-## Docs: http://hexo.io/docs/deployment.html
+## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: git@github.com:ikkou/ikkou.github.io.git
@@ -80,20 +80,11 @@ feed:
   limit: 20
   hub:
 
-# sitemap
-## https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap
-sitemap:
-  path: sitemap.xml
 
-# toc
-## https://github.com/bubkoo/hexo-toc
-toc:
-  maxDepth: 3
 
-# hexo-tag-emojis plugin configuration
-## https://github.com/sergiolepore/hexo-tag-emojis
-plugins:
-  - hexo-tag-emojis
 
-emojis:
-  image_dir: images/emojis
+
+
+
+
+
