@@ -80,6 +80,23 @@ feed:
   limit: 20
   hub:
 
+# sitemap
+## https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap
+sitemap:
+  path: sitemap.xml
+
+# toc
+## https://github.com/bubkoo/hexo-toc
+# toc:
+#   maxDepth: 3
+
+# hexo-tag-emojis plugin configuration
+## https://github.com/sergiolepore/hexo-tag-emojis
+# plugins:
+#   - hexo-tag-emojis
+
+emojis:
+  image_dir: images/emojis
 
 
 
