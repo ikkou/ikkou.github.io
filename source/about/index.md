@@ -7,7 +7,7 @@ date: 2015-12-07 01:06:08
 ## About
 
 - ikkou
-- Front-end Engineer, Photographer
+- Community Evangelist, Front-end Engineer, Photographer
 - [g1983ers](https://twitter.com/search?q=%23g1983ers)
 
 ## Social accounts
@@ -18,9 +18,15 @@ date: 2015-12-07 01:06:08
 
 ## Communities
 
-- [Meguro.es](http://meguroes.connpass.com/)
+- [Meguro.es](https://meguro.es/)
   - 2015年12月〜
   - 目黒界隈でECMAScript, 広くはJavaScriptのことをアレコレする勉強会
+- [VR Tech Tokyo](https://vrtokyo.connpass.com/)
+  - 2016年09月〜
+  - VR関連コンテンツ開発者向けLT型勉強会
+- [WebAudio.tokyo](http://webaudio.tokyo/)
+  - 2016年09月〜
+  - Web Audio APIのための勉強会
 
 ## Talks
 
