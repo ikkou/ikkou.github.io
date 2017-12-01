@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<meta charset="utf-8">
+
+<title>WASM が当たり前になった未来に期待している、あるいは emscripten night !! を知ってもらいたい話 | ikkou.jp</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="これは IT勉強会/コミュニティ運営 Advent Calendar 2016 の22日目です。 このアドベントカレンダーを立てた張本人の @ikkou です。嫁ちゃんが好きです。今日までに様々なIT勉強会/コミュニティの中の人による知見やノウハウがたくさん挙げられていて、作って良かったなーと思っている今日この頃です。">
+<meta name="keywords" content="AdventCalendar,emsn,emscripten,asm.js,WASM,WebAssembly">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WASM が当たり前になった未来に期待している、あるいは emscripten night !! を知ってもらいたい話">
+<meta property="og:url" content="https://ikkou.jp/introducing-emscripten-night/index.html">
+<meta property="og:site_name" content="ikkou.jp">
+<meta property="og:description" content="これは IT勉強会/コミュニティ運営 Advent Calendar 2016 の22日目です。 このアドベントカレンダーを立てた張本人の @ikkou です。嫁ちゃんが好きです。今日までに様々なIT勉強会/コミュニティの中の人による知見やノウハウがたくさん挙げられていて、作って良かったなーと思っている今日この頃です。">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://ikkou.jp/img/20161222/emscripten-night.png">
+<meta property="og:updated_time" content="2017-12-01T09:42:04.897Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WASM が当たり前になった未来に期待している、あるいは emscripten night !! を知ってもらいたい話">
+<meta name="twitter:description" content="これは IT勉強会/コミュニティ運営 Advent Calendar 2016 の22日目です。 このアドベントカレンダーを立てた張本人の @ikkou です。嫁ちゃんが好きです。今日までに様々なIT勉強会/コミュニティの中の人による知見やノウハウがたくさん挙げられていて、作って良かったなーと思っている今日この頃です。">
+<meta name="twitter:image" content="https://ikkou.jp/img/20161222/emscripten-night.png">
+<meta name="twitter:creator" content="@ikkou">
+<meta property="fb:app_id" content="1513249022302711">
+
+<link rel="alternative" href="/atom.xml" title="ikkou.jp" type="application/atom+xml">
+
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/bpush_loader.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70909383-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+</head>
+
+<body>
+<div id="container">
+  <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">ikkou.jp</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li><li><a href="/about">About</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ikkou.jp"></form>
+	</div>
+</header>
+  <div id="main">
+    <article id="post-introducing-emscripten-night" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/introducing-emscripten-night/" class="article-date">
+  <time datetime="2016-12-22T09:30:00.000Z" itemprop="datePublished">2016/12/22</time>
+</a>
+		</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      WASM が当たり前になった未来に期待している、あるいは emscripten night !! を知ってもらいたい話
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>これは <a href="http://qiita.com/advent-calendar/2016/event-management" target="_blank" rel="noopener">IT勉強会/コミュニティ運営 Advent Calendar 2016</a> の22日目です。</p>
+<p>このアドベントカレンダーを立てた張本人の @ikkou です。嫁ちゃんが好きです。<br>今日までに様々なIT勉強会/コミュニティの中の人による知見やノウハウがたくさん挙げられていて、作って良かったなーと思っている今日この頃です。</p>
+<a id="more"></a>
+<h2><span id="はじめに">はじめに</span></h2><p><img src="/img/20161222/emscripten-night.png" alt=""></p>
+<p>ここ最近は一定の意図・目的を持った上でコミュニティ活動に勤しんでいて、IT勉強会/コミュニティ運営 Advent Calendar 2016 の 8 日目で書かれている Meguro.es や 15 日目で書かれている WebAudio.tokyo の運営にも携わっています。</p>
+<ul>
+<li><a href="https://meguro.es/2016/12/08/advent-calendar-2016/" target="_blank" rel="noopener">Meguro.esは1周年を迎えました!Meguro.esの工夫や取り組み</a></li>
+<li><a href="http://webaudio.tokyo/2016/12/15/event-management-advent-calendar/" target="_blank" rel="noopener">WebAudio界隈とWebAudio.tokyo</a></li>
+</ul>
+<p>現時点で最注力しているコミュニティは <a href="https://vrtokyo.connpass.com/" target="_blank" rel="noopener">VR Tech Tokyo</a> という VR 関連のコミュニティですが、今日はそれらとは別に <a href="https://emsn.connpass.com/" target="_blank" rel="noopener">emscripten night !!</a> というコミュニティ規模は小さいけれど、密度は濃いコミュニティのお話です。</p>
+<p>ちなみに <code>WASM</code> そのものの話しは出てきません。</p>
+<h2><span id="emscripten-night-is-何">emscripten night !! is 何</span></h2><p>emscripten night !! は、<code>emscripten</code> を主軸に、<code>asm.js</code>、<code>WASM</code> こと <code>WebAssembly</code> を用いたアレコレをテーマとしたコミュニティです。</p>
+<p>emscripten night !! は、<code>emscripten</code> を主軸に、<code>asm.js</code>、<code>WASM</code> こと <code>WebAssembly</code> を用いたアレコレをテーマとしたコミュニティです。</p>
+<p>大事なことなので 2 度言いました。</p>
+<p><code>emscripten</code>、<code>asm.js</code>、<code>WASM</code> こと <code>WebAssembly</code> というキーワードにピンときた人は、今直ぐ <a href="https://emsn.connpass.com/" target="_blank" rel="noopener">emscripten night !!</a> のページにアクセスして、グループメンバーになってください。</p>
+<h2><span id="これまでの歴史と-cc-の知識があると捗る雰囲気">これまでの歴史と C/C++ の知識があると捗る雰囲気</span></h2><p>2016/10/05 に初回を開催、昨日 2016/12/21 に 2 回目を迎えたばかりの新米コミュニティです。前述の通り各コミュニティの運営を通して得られた知見を生かすことが出来るので、会そのものは安定して実施出来ています。出来ていると思っています。</p>
+<p>各回の雰囲気はこんな感じ。</p>
+<ul>
+<li><a href="https://togetter.com/li/1035509" target="_blank" rel="noopener">emscripten night !! #1 まとめ</a></li>
+<li><a href="https://togetter.com/li/1062035" target="_blank" rel="noopener">emscripten night !! #2 まとめ</a></li>
+</ul>
+<p>C/C++ の知識があることを前提として会話される JavaScript 勉強会こわいと思った方、大丈夫です、運営元である私自身、普段 C/C++ に触れることのない Web フロントエンジニア勢です、気が動転してガルパンおじさんよろしく「C/C++ はいいぞ」と口にしてしまうこともありますが、Web フロントエンジニア勢でも話しを聞きながら頷ける現場となっています。</p>
+<p>逆になにこれ楽しそうと思った方は絶対に来た方が良いです。なにせ <code>emscripten</code> を始めとして、<code>asm.js</code> や <code>WASM</code> 関連に閉じた形で語られる場はほぼほぼありません。</p>
+<p>登壇側としては、広域な Web 系勉強会あるいは JavaScript 関連の勉強会で話したとしてもポカーンとされてしまう可能性のある内容が emscripten night !! であれば、自然と、スムースに腹落ちしてもらえます。</p>
+<p>聞き手側としても、基本的に濃い内容が展開されるので、技術的に触りの部分ではなく深掘った内容が聞きたい、サンプルではなく実例/事例を聞きたい、という意思を持って顔を出しているのであれば、満足出来るはずです。</p>
+<h2><span id="密度が濃ければ参加人数は少なくても構わない">密度が濃ければ参加人数は少なくても構わない</span></h2><p>IT勉強会/コミュニティを主催・運営する目的は人それぞれだと思います。</p>
+<p>自分が携わっているものとして、参加人数が 100 名超えのものもあれば、50 名規模のものもある中、emscripten night !! は実質 30 名規模と人数規模はそれほど大きくありません。</p>
+<p>そもそも <code>emscripten</code> というキーワードに反応する層あるいは反応できる層がだいぶ限られると思っているので、参加人数を爆発的に増やしたい、という気持ちは正直なところあまりありませんが、主題となっている <code>emscripten</code> クラスタをはじめとして、それが業務であろうとなかろうと <code>asm.js</code> や <code>WASM</code> に関する何かに取り組んでいる人には、届いて欲しいと思っています。</p>
+<p>届くべき人、届いて欲しい人に達しているのであれば、仮に参加人数が少なくとも、実に濃い、深い話しに興じることが出来ます。そしてパイが小さい場合、その熱量は高くなる傾向になり、参加率の歩留まりが良くなる結果に繋がります。</p>
+<p>これはまさにアドベントカレンダーの趣旨に通じる話しで、歩留まりの安定化は運営側にとって悩みどころだと思いますが、自分の趣味嗜好としてテーマ特化型のコミュニティが好きなのは、こういう側面もあるからだと思います。</p>
+<h2><span id="運営による強制キャンセル過激派でありたい">運営による強制キャンセル過激派でありたい</span></h2><p>余談ですが、12 日目の <a href="https://gist.github.com/pine/09805c84255c002731ff0b927b05283d" target="_blank" rel="noopener">IT 勉強会の闇と、如何にして闇を払うか</a> でも触れられている通り、コミュニティ活動をしていると図らずも闇に襲われることがあります。</p>
+<p>特に人関連の闇はアレがアレで、例えば増田で話題になった「勉強会ゴロ」、これは言葉の使い方が悪い例だけど、ようは目につくイベントに手当たり次第、それがダブルブッキングだったとしても申し込むだけ申し込む人、私が携わるイベントにおいて、こういった人は運営側で強制キャンセルする対象としています。</p>
+<p>私は申し込みの場として connpass を「利用させてもらっている」ので、こういった輩に対して一定の対処を開発元にお願いしたことがあるのですが、残念ながら大きな変化は見えていないので、運営による強制キャンセルを積極的に行なっていくことにしました。</p>
+<p>あるいは夜ご飯として <code>:sushi:</code> や <code>:pizza:</code> にありつくことを目的としているのか、イベント当日になって参加枠の空いているイベントに申し込む人、こういった人は本当に懇親会が始まる直前になって会場に顔を出します。さらにその先になると顔を思い浮かべる人も多いであろう特定の要注意人物になりますが、真摯にコミュニティを楽しもうと思って会場に来てくれる人が厭な気持ちになる存在は、積極的に強制キャンセルと出禁処理を施していく所存です。</p>
+<p>幸いなことに emscripten night !! ではそういった事例に出会していません。</p>
+<h2><span id="おわりに">おわりに</span></h2><p>emscripten night !! に限らない話しですが、セッションに登壇してくれる方、LT に登壇してくれる方、参加者として会場にお越しいただく方、そして運営を手伝ってくれる仲間すべてに感謝です。コミュニティはひとりで作っていくものではなく、みんなで作っていくものなので、引き続き界隈の発展のために、皆々様よろしくお願いします！</p>
+<p>ちなみに次回の emscripten night !! #3 は 2017 年 3 月か 4 月あたりでの開催を目論でいます！</p>
+
+
+		<ul class="share-on">
+			<li><a class="share-on-twitter" href="https://twitter.com/intent/tweet?text=WASM が当たり前になった未来に期待している、あるいは emscripten night !! を知ってもらいたい話&url=https://ikkou.jp/introducing-emscripten-night/&via=ikkou" target="_blank">Twitter</a></li>
+			<li><a class="share-on-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://ikkou.jp/introducing-emscripten-night/" target="_blank">Facebook</a></li>
+			<li><a class="share-on-hatena" href="http://b.hatena.ne.jp/entry/https://ikkou.jp/introducing-emscripten-night/" target="_blank">はてブ</a></li>
+		</ul>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+			</span>
+			<span class="tags">
+				
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AdventCalendar/">AdventCalendar</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WASM/">WASM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WebAssembly/">WebAssembly</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/asm-js/">asm.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/emscripten/">emscripten</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/emsn/">emsn</a></li></ul>
+
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+    <a href="/hello-2017/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          2016 → 2017
+        
+      </div>
+    </a>
+  
+  
+    <a href="/dear-my-wife-okawari/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          諸君、私は嫁ちゃんが好きだ〜おかわり〜
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+  </div>
+  <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:ikkou.jp">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">ikkou.jp</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2017 ikkou<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+  
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+</div>
+</body>
+</html>
