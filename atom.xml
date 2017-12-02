@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ikkou.jp/"/>
-  <updated>2017-12-02T10:59:32.000Z</updated>
+  <updated>2017-12-02T14:40:24.230Z</updated>
   <id>https://ikkou.jp/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IT勉強会/コミュニティ運営 Advent Calendar 2017 をやるよ、あるいは今からでも書いてくれる人を募集しているよ、という話</title>
+    <link href="https://ikkou.jp/community-management-2017/"/>
+    <id>https://ikkou.jp/community-management-2017/</id>
+    <published>2017-12-02T14:45:00.000Z</published>
+    <updated>2017-12-02T14:40:24.230Z</updated>
+    
+    <content type="html"><![CDATA[<p>これは <a href="https://qiita.com/advent-calendar/2017/community-management" target="_blank" rel="noopener">IT勉強会/コミュニティ運営 Advent Calendar 2017</a> の2日目の記事です。</p><p>昨日は <a href="https://twitter.com/n0bisuke" target="_blank" rel="noopener">n0bisuke</a> さんの「<a href="https://qiita.com/n0bisuke/items/d081d0990acd89c078f8" target="_blank" rel="noopener">Node.jsでconnpassの自分が管理しているイベント( #iotlt )の情報を取得</a>」でした。<br>n0bisuke さんが運営している <a href="https://twitter.com/search?f=tweets&amp;vertical=default&amp;q=%23IoTLT&amp;src=typd" target="_blank" rel="noopener">#IoTLT</a> は継続できる仕組みで運用されていて、コミュニティの在り方として正しい道を進んでいるな、と思っています。</p><a id="more"></a><h2><span id="はじめに">はじめに</span></h2><p>このアドベントカレンダーは、いわゆる「勉強会」や「コミュニティ」を運営している主催者やオーガナイザー、あとはスタッフに類する人が、うちではこんな感じでやっているよ！他はどう？みたいなことを気軽に共有しあうことを趣旨としています。</p><p>今年は参加表明の進捗が今ひとつで、全25日中7日しか埋まっていないので、勉強会やっているよ！コミュニティやっているよ！色々スタッフとして参加しているよ！な人は紹介程度でも構わないので書いてもらえると嬉しいです……!!</p><h2><span id="2017年はこんなイベントを運営していました">2017年はこんなイベントを運営していました</span></h2><p>というわけで本日はアドベントカレンダーの所信表明エントリ。</p><p>今年 2017 年は…</p><ul><li><a href="https://html5j-webplat.connpass.com/event/47239/" target="_blank" rel="noopener">シン・Web VRとか文化祭</a></li><li><a href="https://vrtokyo.connpass.com/event/46568/" target="_blank" rel="noopener">VR Funhouse MODthon</a></li><li><a href="https://vrtokyo.connpass.com/" target="_blank" rel="noopener">VR Tech Tokyo 改め xR Tech Tokyo</a></li><li><a href="https://meguroes.connpass.com/" target="_blank" rel="noopener">Meguro.es</a></li><li><a href="https://emsn.connpass.com/" target="_blank" rel="noopener">emscripten night !! 改め emscripten &amp; WebAssembly night !!</a></li><li><a href="https://vrkanojo.connpass.com/event/57236/" target="_blank" rel="noopener">例のカノジョ ハッカソン</a></li><li><a href="https://vrkanojo.connpass.com/event/67774/" target="_blank" rel="noopener">例のカノジョ ハッカソン展</a></li><li><a href="https://vrtokyo.connpass.com/event/71473/" target="_blank" rel="noopener">Mercari AR Hackathon #0</a> ← これから！</li></ul><p>…あたりに携わってきました。</p><p>イベント企画屋よろしく今年も単発イベントを含めて毎月何かしらのイベントを運営していましたが、その反面、一般参加者として勉強会に参加する機会は数年前に比べると減った気がします。</p><h2><span id="継続運営していくモチベーションの原典">継続運営していくモチベーションの原典</span></h2><p>上記に挙げた自分が携わっているものの中で、メインどころと言えるコミュニティは <code>xR Tech Tokyo</code> と <code>emscripten &amp; WebAssembly night !!</code> です。<br>両方とも思い入れのあるコミュニティで、自分が強い興味を持っている技術をテーマとしています。</p><p>少し懐かしいところで「どこにもないものならば作りましょう♪」というフレーズがありますが、一参加者として勉強会に参加するのも楽しいですが、実は勉強会そのものを企画して運営してしまった方が、もっともっと楽しい時間を過ごせるのではないかと考えています。<br>もちろん「思い」だけで運営するのは非現実的ですが……!!</p><h2><span id="おわりに">おわりに</span></h2><p>今のところ明日から8日まで担当している人がいないので、取り急ぎ明日は昨年同様に <a href="https://emsn.connpass.com/" target="_blank" rel="noopener">emscripten &amp; WebAssembly night !</a> のことを書きます……が、残りの全日程を埋めるには程遠く、それより何より各コミュニティの知見に触れたい思いが強いので、IT勉強会/コミュニティを運営している皆々様におかれましては、参加の程よろしくお願いいたします！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;これは &lt;a href=&quot;https://qiita.com/advent-calendar/2017/community-management&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IT勉強会/コミュニティ運営 Advent Calendar 2017&lt;/a&gt; の2日目の記事です。&lt;/p&gt;
+&lt;p&gt;昨日は &lt;a href=&quot;https://twitter.com/n0bisuke&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;n0bisuke&lt;/a&gt; さんの「&lt;a href=&quot;https://qiita.com/n0bisuke/items/d081d0990acd89c078f8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Node.jsでconnpassの自分が管理しているイベント( #iotlt )の情報を取得&lt;/a&gt;」でした。&lt;br&gt;n0bisuke さんが運営している &lt;a href=&quot;https://twitter.com/search?f=tweets&amp;amp;vertical=default&amp;amp;q=%23IoTLT&amp;amp;src=typd&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;#IoTLT&lt;/a&gt; は継続できる仕組みで運用されていて、コミュニティの在り方として正しい道を進んでいるな、と思っています。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="AdventCalendar" scheme="https://ikkou.jp/tags/AdventCalendar/"/>
+    
+  </entry>
   
   <entry>
     <title>諸君、私は嫁ちゃんが好きだ 2017</title>
