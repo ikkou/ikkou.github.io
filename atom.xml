@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ikkou.jp/"/>
-  <updated>2017-12-02T14:40:24.230Z</updated>
+  <updated>2017-12-04T11:19:06.773Z</updated>
   <id>https://ikkou.jp/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ドリコム社を退職してメルカリ社に転職した話</title>
+    <link href="https://ikkou.jp/retirement-2017/"/>
+    <id>https://ikkou.jp/retirement-2017/</id>
+    <published>2017-12-04T15:00:00.000Z</published>
+    <updated>2017-12-04T11:19:06.773Z</updated>
+    
+    <content type="html"><![CDATA[<p>これは <a href="https://adventar.org/calendars/2158" target="_blank" rel="noopener">退職者 Advent Calendar 2017</a> の5日目の記事です。</p><p>昨日は自分と同じ xR 界隈の <a href="https://twitter.com/aicayamazaki" target="_blank" rel="noopener">@aicayamazaki</a> さんの「<a href="http://icarium.hatenablog.com/entry/taishoku" target="_blank" rel="noopener">恋とキャリアと現実の話〜損害賠償と恐喝を添えて　退職者 Advent Calendar 2017</a>」でした。</p><p>実は自分も「写真」を生業にしていた時期があるので、エントリを読んだ後で、まさか同じ境遇の人が同じクラスタにいるとは、とちょっとびっくりしたものです。</p><a id="more"></a><h2><span id="はじめに">はじめに</span></h2><p>2017年8月末を以て <a href="http://www.drecom.co.jp/" target="_blank" rel="noopener">株式会社ドリコム</a> を退職し、翌9月1日から <a href="https://about.mercari.com/" target="_blank" rel="noopener">株式会社メルカリ</a> に入社しました。<br>ドリコム社には2014年9月にジョインしたので、丸3年間お世話になっていたことになります。</p><h2><span id="ドリコム社でやっていたこと">ドリコム社でやっていたこと</span></h2><p>Webフロントエンド領域のマネージャーとして、メンバーが働きやすい環境や状況を整えたり作ったりしていました。表舞台に立って戦うよりも、意識的に裏方にまわってアレコレしていることの方が多かった気がします。</p><p>やっていき！の気持ちドリブンで立ち上げたドリコム社の技術情報サイト <a href="https://tech.drecom.co.jp/" target="_blank" rel="noopener">Tech Inside Drecom</a> は引き継いでくれる後輩がいて安心しました。</p><p>厳密にはドリコム社としてのお仕事ではないですが、一時期失われていた Web フロントエンドの文脈を復興する意味合いも込めて、目黒界隈の JavaScript コミュニティ <a href="https://twitter.com/hashtag/meguroes" target="_blank" rel="noopener">#meguroes</a> を優秀な後輩氏と立ち上げたりもしました。</p><h2><span id="なぜ転職したのか">なぜ転職したのか</span></h2><p>一部界隈で話題の <code>xR転職</code> です＼(^o^)／<br>人生一度きりならやりたいことをやりたかった、この思いとタイミングが合致した結果が今回の転職です。</p><p>折しも子どもが生まれたタイミングで、本来なら育休なり有給休暇を取得すべきところ、有給休暇をほぼほぼ捨てる形となってでも転職を応援してくれた嫁ちゃんには本当に感謝しています。</p><h2><span id="メルカリ社でやっていること">メルカリ社でやっていること</span></h2><p>今はまだあまり多くを語れませんが、全力でやりたいことをやっています！</p><h2><span id="ここがすごいよメルカリ社">ここがすごいよメルカリ社！</span></h2><p>基本的に <a href="https://www.mercari.com/jp/jobs/" target="_blank" rel="noopener">採用情報</a> ページに載っていますが、名ばかりではないフレックスタイム制を始めとして、特にエンジニア属性の人は生きやすい環境となっています。</p><p>ブラックホールと揶揄されることもありますが、エンジニアとして「強い」人たちがたくさんいるので、それはもう楽しいに決まっています。</p><p>もちろん副業も可、というよりも副業が推奨されています。推奨されているからといって基本給が安いなんてこともなく、控えめに言っても高めのお賃金を得られる印象があります。</p><p>他に <a href="https://www.mercari.com/jp/jobs/#merci-box" target="_blank" rel="noopener">merci box</a> という、控えめに言っても最強の福利厚生があります。</p><blockquote><p>merci boxは「Go Boldにおもいっきり働ける環境をより充実させてていくため」の仕組みや制度をまとめたものです。<br><a href="https://www.mercari.com/jp/jobs/#merci-box" target="_blank" rel="noopener">https://www.mercari.com/jp/jobs/#merci-box</a></p></blockquote><p>ライフステージによって使う使わない制度もありますが、個人的には次の2つは神すぎると思っています。</p><ul><li>産休・育休期間中の給与を会社が <strong>100%</strong> 保障する制度</li><li>認可保育園に入園できなかった場合に認可外保育園の差額保育料を会社が負担する制度</li></ul><p>特に後者は昨今の事情を鑑みるとお世話になる可能性が高いので、金銭的な心配をしなくて済むのはありがたい限りです。</p><h2><span id="おわりに">おわりに</span></h2><p>というわけで現職は控えめに言っても最高な職場です！転職バンザイ！</p><p>そんな弊社は全方位で採用活動を進めているので、サーバーサイドの人も、Webフロントエンドの人も、ネイティブアプリの人も、プロデューサーもデザイナーも職種を問わず、メルカリ社のことが気になる方は <a href="https://twitter.com/ikkou" target="_blank" rel="noopener">@ikkou</a> までお声掛けください！<br>まずは六本木での食事事情を、焼肉でも食べながらおしゃべりしましょう:D</p><div class="twitter-wrapper"><blockquote class="twitter-tweet"><a href="https://twitter.com/ikkou/status/927482908280995840" target="_blank" rel="noopener"></a></blockquote></div><script async defer src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>明日は <a href="https://twitter.com/youten_redo" target="_blank" rel="noopener">@youten_redo</a> さんです！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;これは &lt;a href=&quot;https://adventar.org/calendars/2158&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;退職者 Advent Calendar 2017&lt;/a&gt; の5日目の記事です。&lt;/p&gt;
+&lt;p&gt;昨日は自分と同じ xR 界隈の &lt;a href=&quot;https://twitter.com/aicayamazaki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;@aicayamazaki&lt;/a&gt; さんの「&lt;a href=&quot;http://icarium.hatenablog.com/entry/taishoku&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;恋とキャリアと現実の話〜損害賠償と恐喝を添えて　退職者 Advent Calendar 2017&lt;/a&gt;」でした。&lt;/p&gt;
+&lt;p&gt;実は自分も「写真」を生業にしていた時期があるので、エントリを読んだ後で、まさか同じ境遇の人が同じクラスタにいるとは、とちょっとびっくりしたものです。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="AdventCalendar" scheme="https://ikkou.jp/tags/AdventCalendar/"/>
+    
+  </entry>
   
   <entry>
     <title>IT勉強会/コミュニティ運営 Advent Calendar 2017 をやるよ、あるいは今からでも書いてくれる人を募集しているよ、という話</title>
